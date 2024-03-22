@@ -7,6 +7,12 @@ class Propery < ApplicationRecord
   validates :city, presence: true
   validates :state, presence: true
   validates :country, presence: true
+
+
+  monetize :price_cents, allow_nil: true
+
+
+
 end
 
 

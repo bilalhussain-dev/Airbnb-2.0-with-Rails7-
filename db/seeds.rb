@@ -9,25 +9,18 @@
 #   end
 
 
-Propery.create!(
-  name: "Sample Property",
-  description: "Some description",
-  headline: "Good Rent and House",
-  address_1: "jsdlfjs",
-  address_2: "jsdlfjs",
-  city: "Lahore",
-  state: "Punjab",
-  country: "Pakistan",
-)
+require 'faker'
 
-
-Propery.create!(
-  name: "Propery kj",
-  description: "djaflkfjas",
-  headline: "Gadfads",
-  address_1: "asdfa",
-  address_2: "jsdlfjs",
-  city: "Florida",
-  state: "FL",
-  country: "United States",
+10.times do
+  Propery.create!(
+  name: Faker::Company.name,
+  description: Faker::Lorem.paragraph,
+  headline: Faker::Lorem.sentence,
+  address_1: Faker::Address.street_address,
+  address_2: Faker::Address.secondary_address,
+  city: Faker::Address.city,
+  state: Faker::Address.state_abbr,
+  country: Faker::Address.country,
+  price: Money.from_amount(50, "USD")
 )
+end

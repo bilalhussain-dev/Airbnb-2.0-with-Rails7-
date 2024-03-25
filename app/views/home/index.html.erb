@@ -35,7 +35,9 @@
                     <p class="mt-1 text-sm text-gray-500">Hosted by Bilal</p>
                     <p class="mt-1 text-sm text-gray-500">20-25 Jan</p>
                     <p class="mt-1 text-sm text-gray-500">
-                      <span class="font-medium text-black">$45.00</span>
+                      <span class="font-medium text-black">
+                        <%= humanized_money_with_symbol(property.price)	 %>
+                      </span>
                       <span>Night</span>
                     </p>
                 </div>

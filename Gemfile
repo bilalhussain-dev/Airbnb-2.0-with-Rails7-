@@ -70,3 +70,4 @@ gem "devise", "~> 4.9"
 gem "tailwindcss-rails", "~> 2.3"
 gem "faker", "~> 3.2"
 gem 'money-rails'
+gem "image_processing", ">= 1.2"

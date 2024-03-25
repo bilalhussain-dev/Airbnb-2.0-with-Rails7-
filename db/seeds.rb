@@ -21,6 +21,6 @@ require 'faker'
   city: Faker::Address.city,
   state: Faker::Address.state_abbr,
   country: Faker::Address.country,
-  price: Money.from_amount(50, "USD")
+  price: Money.from_amount(5088, "USD")
 )
 end
